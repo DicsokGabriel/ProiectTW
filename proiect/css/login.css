@@ -1,0 +1,95 @@
+.container {
+	
+	
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-width: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.secondary_header {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+	background: rgba(8,105,114,0.0);
+	clear: left;
+}
+.container .secondary_header ul {
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5%;
+	padding-left: 0px;
+	width: 100%;
+}
+.secondary_header ul li {
+	list-style: none;
+	float: center;
+	margin-right: auto;
+	margin-top: 0px;
+	font-family: "hacked";
+	font-weight: normal;
+	color: #17b978;
+	letter-spacing: 1px;
+	margin-left: auto;
+	text-align: center;
+	padding-right:6%;
+	width: 16%;
+	transition: all 0.3s linear;
+}
+.secondary_header ul li:hover {
+	color: #071a52;
+	cursor: pointer;
+}
+.cent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cent th{
+	float:left;
+}
+.labe{
+	font-family: "hacked";
+	color: #17b978;
+}
+.labe:hover{
+	color: #071a52;
+	cursor: pointer;
+}
+.inp{
+	font-color:White;
+  	background-color : black; 
+
+}
+input, select, textarea{
+    color: white;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #071a52 5%, white  100%, #086972  10%)}
+.btn-grad {
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: #17b978;            
+	font-family:"hacked";
+	
+	display: block;
+}
+
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #071a52;
+	text-decoration: none;
+}
+         
