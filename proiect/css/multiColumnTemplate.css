@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: hac;
+    src: url('hacked-webfont.woff2') format('woff2'),
+         url('hacked-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 .container {
 	
@@ -74,7 +81,7 @@
 	float: left;
 	margin-right: auto;
 	margin-top: 0px;
-	font-family: "hacked";
+	font-family: hacked;
 	font-weight: normal;
 	color: #17b978;
 	letter-spacing: 1px;
