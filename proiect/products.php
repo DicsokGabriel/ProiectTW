@@ -47,7 +47,7 @@
 	
 		
 			
-			<div class="button"><button class="block hacked" onclick="location.href='cart.html'"   style="position: absolute">Cart</button></div>
+			<div class="button"><button class="block hacked" onclick="location.href='cart.php'"   style="position: absolute">Cart</button></div>
 			
 		 
 		 
@@ -112,7 +112,7 @@
 	
 	$conn =mysqli_connect("localhost","root","","users");
 	//mysqli_select_db($conn,"products");
-	$res=mysqli_query($conn,"select * from products");
+	$res=mysqli_query($conn,"select * from products ORDER BY  Price desc");
 	if (!$res) {
 		printf("Error: %s\n", mysqli_error($conn));
 		exit();
@@ -121,7 +121,7 @@
 	{
 		echo '<div class="columns">';
 		?><p  class="thumbnail_align"> 
-		<img onclick="location.href='products.php?hello=<?php echo $row['ID'];?>'" src="<?php echo $row["Img"];?>" alt="" class="thumbnail"/>
+		<img onclick="location.href='aGame.php?hello=<?php echo $row['ID'];?>'" src="<?php echo $row["Img"];?>" alt="" class="thumbnail"/>
 		</p><h4><?php echo $row["Name"];?></h4></p><h4>Price: <?php echo $row["Price"];?></h4></div>
 		
 <!--"location.href='<?php echo 'aGame.php';?>'"-->

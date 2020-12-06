@@ -56,8 +56,8 @@
 
 .secondary_header {
 	width: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: #075F67;
 	clear: left;
 }
@@ -267,8 +267,8 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	padding-top: 1px;
 	padding-bottom: 40px;
+	padding-top:12%
 }
 
 .placeholder {
@@ -369,8 +369,14 @@ body {
 }
 .d12{
 	
-	padding-top:2.30%;
 	font-size: 150%;
+}
+.d11{
+	padding-top: 0.65%;
+	font-size: 150%;
+}
+.d10{
+	padding-top:25%;
 }
 .links{
 	text-align: center;
@@ -420,4 +426,23 @@ body {
 	font-family: hacked;
 	
 	
+}
+.btn-grad {background-image: linear-gradient(to right, #071a52 5%, white  100%, #086972  10%)}
+.btn-grad {
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: #17b978;            
+	font-family:"hacked";
+	
+	display: block;
+}
+
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #071a52;
+	text-decoration: none;
 }

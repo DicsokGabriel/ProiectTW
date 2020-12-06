@@ -436,3 +436,38 @@ body {
 	
 	
 }
+.cent {
+  margin-left:auto;
+margin-right:auto;
+}
+
+.cent th{
+	float:left;
+}
+.labe{
+	font-family: "hacked";
+	color: #17b978;
+}
+.labe:hover{
+	color: #071a52;
+	cursor: pointer;
+}.btn-grad {background-image: linear-gradient(to right, #071a52 5%, white  100%, #086972  10%)}
+.btn-grad {
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: #17b978;            
+	font-family:"hacked";
+	
+	display: block;
+}
+
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #071a52;
+	text-decoration: none;
+}
+         
