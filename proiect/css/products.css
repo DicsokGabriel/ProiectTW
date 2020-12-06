@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 
+@font-face {
+    font-family: 'hackedregular';
+    src: url('hacked-webfont.woff2') format('woff2'),
+         url('hacked-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .row{
 	background-color:#071a52;
 }
@@ -151,6 +160,9 @@ body {
 
 .d12{
 	
+					
+				font-family: 'hackedregular';
+							
 	
 	font-size: 100%;
 }	
@@ -369,8 +381,8 @@ body {
 }
 .d12{
 	
-	padding-top:2.30%;
-	font-size: 150%;
+	 
+	font-size: 100%;
 }
 .links{
 	text-align: center;
@@ -417,7 +429,7 @@ body {
 
 .try tr td label{
 	color:#17b978;
-	font-family: hacked;
+	font-family: 'hackedregular';
 	
 	
 }

@@ -34,10 +34,10 @@
     <nav class="secondary_header" id="menu">
       <ul>
 		<li><img onclick="location.href='Untitled-1.html'" src="https://cdn.discordapp.com/attachments/697470483813367821/777891384098291732/DGpalette2.png" ></li>
-        <li class="d12"  ><a class="links hacked" href="Untitled-1.html">Home</a></li>
+        <li class="d12"  ><a class="links hacked" href="Untitled-1.html" style="font-size:150%;">Home</a></li>
         
         
-        <li class="d12" id="login"><a class="links hacked" href="login.html">register</a></li>
+        <li class="d12" id="login"><a class="links hacked" href="login.php" style="font-size:150%;" >register</a></li>
 		  
       </ul>
 		
@@ -99,31 +99,43 @@
   
 	
   <div class="row">
-    <div class="columns">
-      <p onclick="location.href='aGame.html'" class="thumbnail_align"> <img src="https://store-images.s-microsoft.com/image/apps.52431.13542174238989216.6160f3bf-da65-4113-8870-4b1bcddf4bb9.bcdb271b-7d3e-409c-8b46-150277a564ad" alt="" class="thumbnail"/> </p>
-      <h4>Rezident Evil 3</h4>
+  <?php
+	function f1(){
+		?><script type="text/javascript">alert(<?php echo $_GET['hello']?>);</script>
+		<?php
+	}
+	if (isset($_GET['hello'])) {
+    f1();
+  }
+	
+	
+	
+	$conn =mysqli_connect("localhost","root","","users");
+	//mysqli_select_db($conn,"products");
+	$res=mysqli_query($conn,"select * from products");
+	if (!$res) {
+		printf("Error: %s\n", mysqli_error($conn));
+		exit();
+	}
+	while($row=mysqli_fetch_array($res))
+	{
+		echo '<div class="columns">';
+		?><p  class="thumbnail_align"> 
+		<img onclick="location.href='products.php?hello=<?php echo $row['ID'];?>'" src="<?php echo $row["Img"];?>" alt="" class="thumbnail"/>
+		</p><h4><?php echo $row["Name"];?></h4></p><h4>Price: <?php echo $row["Price"];?></h4></div>
 		
-	</div>
-	  <div class="columns">
-      <p onclick="location.href=''" class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-	</div>
-    <div class="columns">
-      <p onclick="location.href=''" class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-	</div>
-	  <div class="columns">
-      <p onclick="location.href=''" class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-	</div>
-    <div class="columns">
-      <p onclick="location.href=''" class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-	</div>
-    <div class="columns">
-      <p onclick="location.href=''" class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-	</div>
+<!--"location.href='<?php echo 'aGame.php';?>'"-->
+		<?php
+		
+	}
+
+?>
+		
+  
+  
+  
+  
+    
   </div>
   
   <div class="social">
